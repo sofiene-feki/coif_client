@@ -1,27 +1,27 @@
 import React from "react";
-import confort from "../assets/confort.png";
-import forme from "../assets/forme.PNG";
-import chemical from "../assets/chemical.PNG";
-import machine from "../assets/machine.PNG";
+// import confort from "../assets/confort.png";
+// import forme from "../assets/forme.PNG";
+// import chemical from "../assets/chemical.PNG";
+// import machine from "../assets/machine.PNG";
 
 const features = [
   {
-    img: confort,
+    //img: confort,
     title: "Confortable",
     desc: "Moelleux et respirant pour un sommeil profond et apaisé",
   },
   {
-    img: forme,
+    // img: forme,
     title: "Garde sa forme",
     desc: "Résiste à l'affaissement, même après des mois d’utilisation",
   },
   {
-    img: chemical,
+    //  img: chemical,
     title: "0% Produit chimique",
     desc: "Tissu et garnissage naturels sans substances nocives",
   },
   {
-    img: machine,
+    //  img: machine,
     title: "Lavable en machine",
     desc: "Entretien facile à 30°C, garde sa douceur lavage après lavage",
   },
