@@ -11,6 +11,10 @@ import liss from "../assets/liss.webp";
 import nail from "../assets/nails.jpg";
 import bal from "../assets/nails.jpg";
 import photos from "../components/ui/photos.svg";
+import jo1 from "../assets/jo1.jpg";
+import jo2 from "../assets/jo2.jpg";
+import jo3 from "../assets/jo3.jpg";
+import jo4 from "../assets/jo4.jpg";
 
 function NextArrow({ onClick }) {
   return (
@@ -53,12 +57,10 @@ export default function ServicesCarousel() {
 
   // ⭐ Services data
   const services = [
-    { id: 1, title: "Coupe", image: coup },
-    { id: 2, title: "Brushing", image: bro },
-    { id: 3, title: "Couleur", image: color },
-    { id: 4, title: "Balayage", image: bal },
-    { id: 5, title: "Lissage", image: liss },
-    { id: 6, title: "nails", image: nail },
+    { id: 1, title: "Coupe", image: jo1 },
+    { id: 2, title: "Brushing", image: jo2 },
+    { id: 3, title: "Couleur", image: jo3 },
+    { id: 4, title: "Balayage", image: jo4 },
   ];
 
   const desktopSettings = {
@@ -86,7 +88,7 @@ export default function ServicesCarousel() {
   };
 
   return (
-    <section className="bg-black relative ">
+    <section className="bg-black relative border-t-3 border-gray-200">
       {/* Floating Gallery Icon */}
       <div className="absolute top-2 left-2 z-20 flex items-center gap-2 bg-black/10 backdrop-blur-xl px-3 py-1 rounded-full shadow-lg border border-white/10">
         <img
@@ -103,7 +105,7 @@ export default function ServicesCarousel() {
         <Slider {...(isMobile ? mobileSettings : desktopSettings)}>
           {services.map((service) => (
             <div key={service.id} className="border border-gray-600">
-              <div className="overflow-hidden border border-2 border-[#c9a36b] shadow-xl bg-black/40 backdrop-blur">
+              <div className="overflow-hidden shadow-xl bg-black/40 backdrop-blur">
                 <img
                   src={service.image}
                   alt={service.title}
