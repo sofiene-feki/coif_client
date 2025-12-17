@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 //import { initFacebookPixel } from "./service/fbPixel";
 const LazyHome = lazy(() => import("./pages/home"));
 const LazyLogin = lazy(() => import("./pages/login"));
+const LazyAdmin = lazy(() => import("./pages/AdminDashboard"));
 const LazyOrders = lazy(() => import("./pages/Orders"));
 const LazyOrderDetail = lazy(() => import("./pages/OrderDetail"));
 
@@ -50,6 +51,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LazyHome />} />
           <Route path="login" element={<LazyLogin />} />
+          <Route path="admin" element={<LazyAdmin />} />
           <Route path="orders" element={<LazyOrders />} />
           <Route path="/order/:id" element={<LazyOrderDetail />} />
         </Routes>
