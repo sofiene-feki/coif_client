@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { ChevronLeft, ChevronRight, X, Play, Pause } from "lucide-react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 import photos from "../components/ui/photos.svg";
 
@@ -102,7 +103,9 @@ export default function ServicesCarousel({ services = [] }) {
                         bg-black/40 backdrop-blur px-3 py-1 rounded-full"
         >
           <img src={photos} className="w-5 h-5" />
-          <span className="text-white text-sm">Gallery</span>
+          <Link to="/admin">
+            <span className="text-white text-sm">Gallery</span>
+          </Link>
         </div>
 
         <Slider {...settings}>
