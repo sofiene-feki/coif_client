@@ -115,7 +115,7 @@ export default function ServicesCarousel({ services = [] }) {
               className="px-2 cursor-pointer"
               onClick={() => setReelIndex(i)}
             >
-              <div className="relative overflow-hidden border border-gray-700 bg-black">
+              <div className="relative overflow-hidden border border-gray-200 bg-black">
                 {service.media?.type === "image" && (
                   <img
                     src={service.media.url}
